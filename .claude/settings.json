@@ -1,0 +1,17 @@
+{
+  "claudeMdExcludes": [
+    "/home/*/.claude/CLAUDE.md"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/session-context.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}
